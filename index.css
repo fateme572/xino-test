@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "iranYekan";
+    src: url(./fonts/IRANYekanMedium.woff);
+    font-weight: 500;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "iranYekan";
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+button {
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    border-width: 0;
+    padding: 12px 10px;
+}
+
+.app {
+    height: 100%;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.start-section:not(.start-section.d-none),
+.end-section:not(.end-section.d-none) {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start-section .btn-start {
+    background-color: blue;
+}
+
+.mid-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.mid-section #question span {
+    background-color: rgb(223, 248, 255);
+    display: inline-block;
+    width: 550px;
+    word-break: break-word;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+.mid-section #question {
+    margin-bottom: 20px;
+}
+
+.mid-section #answers {
+    display: flex;
+    flex-direction: column;
+}
+
+.mid-section #answers .answer-item label {
+    width: 500px;
+    display: inline-block;
+    background-color: rgb(238, 246, 252);
+    margin-bottom: 7px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    word-break: break-word;
+}
+
+.mid-section #answers .answer-item input {
+    display: none;
+}
+
+.mid-section .progress-bar-wrapper {
+    margin: 20px auto 0;
+    height: 50px;
+}
+
+.mid-section .progress-bar {
+    width: 100px;
+    height: 10px;
+    border: 1px solid;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.mid-section .progress-bar .progress-bar__track {
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    animation-name: progress;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes progress {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+.end-section #btn-refresh {
+    background-color: rgb(132, 209, 132);
+}
+
+.answer-state {
+    display: inline-block;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.answer-success {
+    background-color: green;
+}
+
+.answer-wrong {
+    background-color: red;
+}
+
+.text-success {
+    color: green
+}
+
+.text-danger {
+    color: red
+}

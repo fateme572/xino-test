@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xino test</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <div class="app">
+        <section id="js_start_section" class="start-section">
+            <button id="btn_start" class="btn-start" onclick="startTest()">شروع</button>
+        </section>
+        <section id="js_mid_section" class="mid-section d-none" id="test">
+            <div id="question"></div>
+            <div id="answers"> </div>
+            <div id="answers_state"></div>
+        </section>
+        <section id="js_end_section" class="end-section d-none">
+            <p id="test_result"></p>
+            <button id="btn-refresh" onclick="restart()">
+                دوباره امتحان کن
+            </button>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
